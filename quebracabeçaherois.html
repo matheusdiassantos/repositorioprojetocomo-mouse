@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr"> <!--comando que abre os códigos de programação, chamo a tag html em português-->
+  <head> <!--abro o cabeçalho, neste bloco está a parte pensante do programa,links chamando outras linguagens e os estilos para interagirem no projeto-->
+    <meta charset="utf-8"> <!-- é uma tag html que define o conjunto de caracteres a ser utilizado na exibição do conteúdo do site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--comando que controla como um site é exibido em um dispositivo móvel-->
+    <title> Quebra Cabeça Heróis </title> <!-- comando responsável por adicionar o titulo dá primeira pagina, exibindo "Quebra Cabeça Heróis"-->
+    <link rel="stylesheet" href="estilo.css" type= "text/css" /> <!--mecanismo para adicionar estilo css a uma página web-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css"> <!--comando que adiciona a linguagem javascript a paágina web-->
+    <link rel="stylesheet" href="/resources/demos/style.css"> <!-- outro chamado para linguagem css-->
+
+    <style>
+    .draggable { width: 30px; height: 30px; padding: 0.5em; }
+    </style> <!-- link que marca uma area que o mouse pode arrastar, comando de java script, demilita uma area de ação do mouse -->
+
+    <style>
+    body {
+      background-color: #87CEFA;
+    }
+    </style>  <!-- comando que muda a cor da página-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- link de javascript-->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script> <!--link de javascript-->
+
+    <script>
+    $( function() {
+      $(".draggable").draggable();
+    });
+    </script> <!-- comando aberto a cima, está chamando um comando em java scrpt, que permite que o mouse arraste o que estiver vinculado a tal-->
+  </head> <!-- comando que fecha o cabeçalho-->
+  <body> <!--abertura do corpo!-->
+    <h1 class="regrasquebracabeçaherois"> REGRAS </h1> <!-- comando de texto que poê um titulo é um comando de texto, e está sendo marcado como variavél-->
+    <p class="textoherois"> <!-- nomeclatura do texto como classe-->
+      <p> Quebra cabeça constituido por dezesseis peças </p> <!--comando de texo-->
+      <p> que tem como objetivo replicar a figura a baixo </p> <!--comando de texo-->
+      <p> das peças. </p> <!-- comando de texo-->
+    </p> <!--fechamento do comando de nemeclatura de variável-->
+
+    <li><a href="index.html"> Inicio </a></li> <!-- link que leva desta pagina para a página inicial, com as seguintes marcações para aparecer no web site como link e aqui como variavél-->
+
+      <figure> <!-- comando que abre o chamado de uma figura-->
+        <div class="draggable"> <!--chamdo da classe draggable que permite que o mouse arraste iténs , abaixo os itens que o mouse arrastará-->
+          <img src="img/17.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/18.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/19.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/20.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/21.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/22.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/23.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/24.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/25.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/26.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/27.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/28.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/29.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/30.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/31.jpg" width="50" height="50" >
+        </div>
+        <div class="draggable">
+          <img src="img/32.jpg" width="50" height="50" >
+        </div> <!-- fechamanto do comando que permite que o mouse arraste os itens, isso com os itens devidamente-->
+      </figure> <!-- fechamento do comando que chama uma figura , repare que as imagens chamadas então todas dentro da div com a classe draggable, assim o kouse tera q possibilidade de move-las-->
+
+      <div class="draggable"> <!--comando que chama a classe draggable-->
+        <figure> <!--comando que chama uma figura-->
+            <img src="img/herois.jpg"> <!--comando que direciona a figura a ser chamada, igual os que estão dentro da div aciama-->
+        </figure> <!--comando que fecha o chamado de uma figura-->
+      </div> <!--comando que fecha a div com a classe draggable-->
+
+
+
+
+
+  </body> <!--comando que fecha o corpo-->
+
+
+
+</html> <!--comando que fecha o html, consequentemente fechando a página-->

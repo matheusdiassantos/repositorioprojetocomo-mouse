@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Jogo da Velha </title>
+    <link rel="stylesheet" href="estilo.css" type= "text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <style>
+    .draggable { width: 30px; height: 30px; padding: 0.5em; }
+    </style>
+
+    <style>
+    body{
+      background-color: #FAF0E6;
+    }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+      $(".draggable").draggable();
+    });
+    </script>
+  </head>
+  <body>
+    <h1 class="regrasjogodavelha"> REGRAS </h1>
+    <p class="textojogodavelha">
+      <p> Dois jogadores escolhem um símbolo cada, normalmente X e O. </p>
+      <p> Usando um tabuleiro 3x3, os jogadores se alternam para colocar seu símbolo em uma lacuna vazia.</P>
+      <p> O objetivo é fazer uma sequência de três símbolos iguais, seja em linha vertical, horizontal ou diagonal, </p>
+      <p> enquanto tenta impedir que o adversário faça o mesmo. </P>
+      <p> O primeiro jogador que conseguir alinhar três símbolos vence o jogo. </p>
+    </p>
+
+    <li><a href="index.html"> Inicio </a></li>
+    
+    <figure>
+      <div class="draggable">
+        <img src="img/jogodavelha.jpg" width="300" height="300" >
+      </div>
+      <div class="draggable">
+        <img src="img/b1.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/b2.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/b3.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/b4.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/b5.png" width="25" height="25">
+      </div>
+      <div class="draggable">
+        <img src="img/x1.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/x2.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/x3.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/x4.png" width="25" height="25" >
+      </div>
+      <div class="draggable">
+        <img src="img/x5.png" width="25" height="25">
+    </figure>
+  </body>
+
+
+  </html>
